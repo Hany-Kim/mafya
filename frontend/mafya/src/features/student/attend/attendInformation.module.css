@@ -1,0 +1,124 @@
+/* .table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin: 20px 10px;
+}
+.table th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #efefef;
+}
+.table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+} */
+
+/* layout */
+.attendTitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 2.5rem 5rem 1rem 5rem;
+  color: rgba(0, 0, 0, 0.701);
+}
+.attendOverlay {
+  margin: auto;
+  width: 75%;
+  height: 20rem;
+  max-width: 960px;
+  padding: 1rem 2rem;
+  display: flex;
+  background: linear-gradient(-15deg, rgba(130, 110, 234, 0.4), #333df4af);
+  box-shadow: 0rem 0.75rem 3rem 0rem rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: relative;
+  color: white;
+  stroke-linecap: round;
+}
+.leftSide {
+  width: 170px;
+  margin-top: 1rem;
+}
+.userNameBox {
+  margin-left: -2rem;
+  text-align: center;
+}
+.userName {
+  font-size: 1.5rem;
+}
+.percentageChart {
+  width: 170px;
+  height: 170px;
+  margin-top: 2rem;
+}
+.percentageBox {
+  position: absolute;
+  /* margin-top: 1.4rem;
+  margin-left: 2.9rem; */
+  height: 170px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percentageP {
+  font-size: 2.5rem;
+}
+.logoutBtnBox {
+  position: absolute;
+  justify-content: center;
+  margin-top: -2.2rem;
+  margin-left: 8.7rem;
+}
+.logoutBtn {
+  width: 3rem;
+  border: none;
+  color: rgba(220, 20, 60, 0.75);
+  border-radius: 0.5rem;
+  background: transparent;
+  height: 1.5rem;
+  margin: 0.5rem 0;
+  padding: 0%;
+  font-family: "Pretendard";
+  font-size: 0.5rem;
+  vertical-align: baseline;
+  transition: 0.5s;
+}
+.logoutBtn:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.rightSide {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+.rightSideInfoBox {
+  width: 5rem;
+}
+.rightSideInfoBox p {
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+}
+.numBox {
+  font-size: 3rem;
+}
+.attendOneFloor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.attendTwoFloor {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}

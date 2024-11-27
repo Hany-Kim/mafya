@@ -1,0 +1,88 @@
+.table {
+  width: 95%;
+  margin: 0.5rem 10px;
+}
+.teamBoxAttend {
+  margin-top: 0.5rem;
+  padding: 0.07rem;
+  border: 2px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0.9rem;
+  width: 100%;
+}
+.teamBoxAbscent {
+  margin-top: 0.5rem;
+  padding: 0.07rem;
+  border: 2px solid white;
+  border-radius: 0.9rem;
+  width: 100%;
+}
+/* .teamBoxTray {
+  margin-top: 0.5rem;
+  padding: 0.07rem;
+  border: 2px solid #ff6347;
+  border-radius: 0.9rem;
+  width: 100%;
+} */
+.teamInner {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+}
+.teamName {
+  width: 60%;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.teamStatus {
+  width: 15%;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.msgBtnFalse {
+  border: none;
+  color: rgba(130, 110, 234, 0.4);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.125);
+}
+.msgBtnTrue {
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: rgba(220, 20, 60, 0.7);
+  transition: 0.3s;
+}
+.msgBtnTrue:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.teamMemberTitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 2.5rem 5rem 1rem 5rem;
+  color: rgba(0, 0, 0, 0.701);
+}
+.teamMemberOverlay {
+  margin: auto;
+  width: 75%;
+  height: 20rem;
+  max-width: 960px;
+  padding: 1rem 2rem;
+  display: flex;
+  background: linear-gradient(-15deg, rgba(130, 110, 234, 0.4), #333df4af);
+  box-shadow: 0rem 0.75rem 3rem 0rem rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: relative;
+  color: white;
+  stroke-linecap: round;
+  font-family: "Pretendard-Regular";
+  font-size: 0.78rem;
+}

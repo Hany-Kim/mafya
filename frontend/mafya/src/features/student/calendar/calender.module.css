@@ -1,0 +1,73 @@
+.calenderOverlay {
+  margin: auto;
+  margin-top: 5.5rem;
+  width: 75%;
+  max-width: 960px;
+  padding: 1rem 2rem;
+  display: flex;
+  background: linear-gradient(-15deg, rgba(130, 110, 234, 0.4), #333df4af);
+  box-shadow: 0rem 0.75rem 3rem 0rem rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: relative;
+  color: white;
+  stroke-linecap: round;
+}
+
+.calenderOverlayInner {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.calenderOverlayInner button:nth-child(odd) {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.calenderOverlayInner button:nth-child(even) {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.calenderOverlayInner button:nth-child(1) span {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.25rem;
+}
+.calenderOverlayInner button:nth-child(3) span {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.25rem;
+}
+.calenderOverlayInner button:nth-child(even) span {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+}
+.calenderOverlayInner div {
+  /* overflow: hidden; */
+}
+.eventSpanAttend {
+  position: absolute;
+  margin-top: 0rem;
+  background: none;
+  border: none;
+}
+.eventSpanAbscent {
+  position: absolute;
+  margin-top: 1rem;
+  background: none;
+}
+.eventSpanStatus {
+  position: absolute;
+  margin-top: 2rem;
+  background: none;
+}
+@media only screen and (max-width: 800px) {
+  .eventSpanAttend {
+    display: none;
+  }
+  .eventSpanAbscent {
+    display: none;
+  }
+}

@@ -1,0 +1,81 @@
+/* by hong */
+.mainPageContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 730px;
+  background-color: #1e1e1e;
+  margin: 0%;
+  padding: 0%;
+}
+/* .webCamBox {
+  margin: 0rem;
+} */
+.webCamArea {
+  border-radius: 15px;
+  /* position: "absolute";
+  margin-left: "auto";
+  margin-right: "auto";
+  left: 0;
+  right: 0; */
+  /* text-align: "center"; */
+  z-index: 9;
+  width: 960px;
+  height: 720px;
+}
+.detectNow {
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #6495ed;
+}
+.nodetectNow {
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #ff6347;
+}
+.tmp {
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #acd282;
+}
+.humanNow {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: content-box;
+  padding: 3px;
+  background-color: #acd282;
+  align-items: center;
+  justify-content: center;
+}
+.noHumanNow {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: content-box;
+  padding: 3px;
+  background-color: #1e1e1e;
+  align-items: center;
+  justify-content: center;
+}
+
+.webCanvas {
+  position: absolute;
+  /* margin-left: "auto";
+  margin-right: "auto"; */
+  /* left: 0;
+  right: 0; */
+  text-align: center;
+  z-index: 8;
+  width: 640px;
+  height: 480px;
+  display: none;
+}
+
+.forMJDesign {
+  color: white;
+  font-size: 30px;
+}

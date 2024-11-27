@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* background */
+.wholePage {
+  background: linear-gradient(
+    -45deg,
+    #4f80f396,
+    /* #23a6d5,
+    #23d5d5a5, */ rgba(114, 220, 233, 0.4)
+  );
+  height: 150vh;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  font-family: "Pretendard-Regular";
+  cursor: default;
+}
+.wholePage:after {
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.inner {
+  justify-content: start;
+  display: flex;
+}
+.statusBox {
+  width: 70%;
+}
+.attendInfoBox {
+  width: 100%;
+}
+.teamMemberBox {
+  width: 100%;
+}
+.calenderBox {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  .wholePage {
+    height: 300vh;
+  }
+  .inner {
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .statusBox {
+    width: 100%;
+    display: flex;
+  }
+  .attendInfoBox {
+    width: 50%;
+  }
+  .teamMemberBox {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .wholePage {
+    height: 380vh;
+  }
+  .inner {
+    justify-content: start;
+    display: flex;
+  }
+  .statusBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .attendInfoBox {
+    width: 100%;
+  }
+  .teamMemberBox {
+    width: 100%;
+  }
+}

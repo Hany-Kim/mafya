@@ -1,0 +1,314 @@
+/* .table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin: 20px 10px;
+}
+.table th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #efefef;
+}
+.table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+} */
+/*  */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* background */
+.wholePage {
+  background: linear-gradient(90deg, rgba(72, 137, 147, 0.4), #2857c496 87%);
+  /* height: 150vh; */
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  font-family: "Pretendard-Regular";
+  cursor: default;
+}
+.wholePage:after {
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.inner {
+  justify-content: start;
+  display: flex;
+}
+.leftSideBox {
+  width: 70%;
+}
+.dangerInfoBox {
+  width: 100%;
+}
+.teamStudentBox {
+  width: 100%;
+  position: relative;
+}
+.rightSideBox {
+  width: 100%;
+}
+.boxTitle {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 1rem 3rem;
+  color: rgba(0, 0, 0, 0.701);
+}
+
+/* dangerList */
+.dangerListBox {
+  text-align: start;
+  height: 20rem;
+  margin: 1rem;
+  overflow-y: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+.dangerListBox::-webkit-scrollbar {
+  background: transparent;
+}
+
+.dangerListBox::-webkit-scrollbar-thumb {
+  background: rgba(121, 121, 121, 0.2);
+  height: 10%;
+  border-radius: 0.5rem;
+}
+.dangerListLine {
+  margin-top: 0.5rem;
+}
+/* teamStudentList */
+.teamStudentList {
+  position: relative;
+  text-align: start;
+  height: 20rem;
+  margin: 1rem 1rem 2rem 1rem;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: solid 3px #d5d5d52d;
+}
+.teamStudentList::-webkit-scrollbar {
+  background: transparent;
+}
+
+.teamStudentList::-webkit-scrollbar-thumb {
+  background: rgba(121, 121, 121, 0.2);
+  height: 10%;
+  border-radius: 0.5rem;
+}
+
+.studentListItem {
+  margin-top: 0.99rem;
+  width: 100%;
+  height: 3.5rem;
+  border: solid 2.2px rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.studentListItemFalse {
+  margin-top: 1rem;
+  width: 100%;
+  height: 3.5rem;
+  border: solid 2px rgba(0, 0, 0, 0.167);
+  color: #505a66;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.studentListItemFalse:hover {
+  border: solid 2px rgba(0, 0, 0, 0.6);
+}
+.studentListInner {
+  width: 100%;
+  padding: 0rem 1rem;
+}
+.studentListCheckBox {
+  display: none;
+}
+.studentName {
+  margin-left: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* searchBox */
+.searchBox {
+  margin: auto;
+  width: 80%;
+  max-width: 960px;
+  /* min-width: 850px; */
+  max-height: 680px;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.375);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: relative;
+  height: 36rem;
+}
+
+/* dropdown */
+.dropbtn {
+  background-color: #3396f4;
+  color: white;
+  padding: 10px 8px 5px 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 45%;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  right: 7%;
+  bottom: 9%;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  bottom: 2.5rem;
+  min-width: 1rem;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dropdownItem {
+  border: none;
+  border-radius: 45%;
+  background-color: #3396f4;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0.4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.sendBtn {
+  border: none;
+  background: none;
+  color: white;
+  margin-left: 0.2rem;
+  transition: 0.3s;
+}
+.sendBtn:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.notChecked {
+  color: white;
+  transition: 0.3s;
+}
+.notChecked:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.checked {
+  color: #dc143c;
+  transition: 0.3s;
+}
+.checked:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+.dropdown:hover .dropdownItem:nth-child(odd) {
+  animation: fadeInUp1 1s;
+}
+.dropdown:hover .dropdownItem:nth-child(even) {
+  animation: fadeInUp2 1s;
+}
+.dropdown:hover .dropbtn {
+  background-color: #acd282;
+}
+@keyframes fadeInUp1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 80%, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translate3d(0, -35%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInUp2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .inner {
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSideBox {
+    width: 100%;
+    display: flex;
+  }
+  .dangerInfoBox {
+    width: 50%;
+  }
+  .teamStudentBox {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .inner {
+    justify-content: start;
+    display: flex;
+  }
+  .leftSideBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dangerInfoBox {
+    width: 100%;
+  }
+  .teamStudentBox {
+    width: 100%;
+  }
+}
